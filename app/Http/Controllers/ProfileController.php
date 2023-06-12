@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
-    public function addplayer(Request $request)
+    public function signup(Request $request)
     {
         $validator = $request->validate([
             'firstname' => 'required',
