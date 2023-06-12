@@ -9,6 +9,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('addplayer', [ProfileController::class, 'addplayer']);
+Route::post('signup', [ProfileController::class, 'signup']);
 
 Route::post('/login', [ProfileController::class, 'login']);
